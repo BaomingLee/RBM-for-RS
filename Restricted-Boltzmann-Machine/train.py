@@ -6,7 +6,7 @@ import numpy as np
 tf.app.flags.DEFINE_string('tf_records_train_path', 'data/tf_records_1M/train/',
                            'Path of the training data.')
 
-tf.app.flags.DEFINE_string('tf_records_test_path', 'data/tf_records_1M/train/',
+tf.app.flags.DEFINE_string('tf_records_test_path', 'data/tf_records_1M/test/',
                            'Path of the test data.')
 
 tf.app.flags.DEFINE_integer('num_epoch', 1000,
