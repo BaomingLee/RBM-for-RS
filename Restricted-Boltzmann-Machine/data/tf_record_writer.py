@@ -50,7 +50,7 @@ def run(output_dir):
 
     SAMPLES_PER_FILES=100
     
-    training_set, test_set=_get_dataset('100k')
+    training_set, test_set=_get_dataset('1M')
 
     for data_set, name, dir_ in zip([training_set, test_set], ['train', 'test'], output_dir):
         
