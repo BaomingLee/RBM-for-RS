@@ -45,10 +45,10 @@ def get_dataset_1M():
 
 def get_dataset_100k():
     
-    training_set=pd.read_csv(ROOT_DIR+'/ml-100k/ua.base', delimiter='\t')
+    training_set=pd.read_csv(ROOT_DIR+'/ml-100k/ua.base', sep='::', header=None, engine='python', encoding='latin-1', delimiter='\t')
     training_set=np.array(training_set, dtype=np.uint32)
     
-    test_set=pd.read_csv(ROOT_DIR+'/ml-100k/ua.test', delimiter='\t')
+    test_set=pd.read_csv(ROOT_DIR+'/ml-100k/ua.test', sep='::', header=None, engine='python', encoding='latin-1', delimiter='\t')
     test_set=np.array(test_set, dtype=np.uint32)
       
     num_users=int(max(max(training_set[:,0]), max(test_set[:,0])))
