@@ -4,8 +4,8 @@ import os
 import sys
 from preprocess_data import _get_dataset
 
-OUTPUT_DIR_TRAIN='/data/tf_records_1M/train'
-OUTPUT_DIR_TEST='/data/tf_records_1M/test'
+OUTPUT_DIR_TRAIN = os.path.abspath(os.path.join(os.path.dirname(__file__), '.' + '/tf_records_1M/train'))
+OUTPUT_DIR_TRAIN = os.path.abspath(os.path.join(os.path.dirname(__file__), '.' + '/tf_records_1M/test'))
 
 
 def _add_to_tfrecord(data_sample,tfrecord_writer):
