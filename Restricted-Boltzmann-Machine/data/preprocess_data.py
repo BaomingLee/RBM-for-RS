@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import gc
 
-ROOT_DIR='C:/Users/Admin/Desktop/deep_learning _local_datasets/colaborative filtering'
+ROOT_DIR='/Users/ming/Documents/GitHub/RBM-for-RS/Restricted-Boltzmann-Machine/data'
 
 
 def convert(data, num_users, num_movies):

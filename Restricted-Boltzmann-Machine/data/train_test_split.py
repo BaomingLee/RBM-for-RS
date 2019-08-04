@@ -1,8 +1,8 @@
 
 ROOT_DIR='/Users/ming/Downloads/Project dataset/MovieLens dataset/ml-1m/ratings.dat'
 
-OUTPUT_DIR_TRAIN='/Users/ming/Downloads/Project dataset/MovieLens dataset/ml-1m/train.dat'
-OUTPUT_DIR_TEST='/Users/ming/Downloads/Project dataset/MovieLens dataset/ml-1m/test.dat'
+OUTPUT_DIR_TRAIN='/Users/ming/Documents/GitHub/RBM-for-RS/Restricted-Boltzmann-Machine/data/ml-1m/train.dat'
+OUTPUT_DIR_TEST='/Users/ming/Documents/GitHub/RBM-for-RS/Restricted-Boltzmann-Machine/data/ml-1m/test.dat'
 
 
 NUM_USERS=6040
