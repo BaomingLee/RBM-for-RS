@@ -4,10 +4,10 @@ from rbm_model import RBM
 import numpy as np
 import os
 
-tf.app.flags.DEFINE_string('tf_records_train_path', os.path.abspath('data/tf_records_1M/train/'),
+tf.app.flags.DEFINE_string('tf_records_train_path', os.path.abspath(os.path.join(os.path.dirname(__file__), '.', 'data/tf_records_1M/train/'),
                            'Path of the training data.')
 
-tf.app.flags.DEFINE_string('tf_records_test_path', os.path.abspath('data/tf_records_1M/test/'),
+tf.app.flags.DEFINE_string('tf_records_test_path', os.path.abspath(os.path.join(os.path.dirname(__file__), '.', 'data/tf_records_1M/test/'),
                            'Path of the test data.')
 
 tf.app.flags.DEFINE_integer('num_epoch', 1000,
