@@ -10,7 +10,7 @@ tf.app.flags.DEFINE_string('tf_records_train_path', os.path.abspath(os.path.join
 tf.app.flags.DEFINE_string('tf_records_test_path', os.path.abspath(os.path.join(os.path.dirname(__file__), '.', 'data/tf_records_1M/test/')),
                            'Path of the test data.')
 
-tf.app.flags.DEFINE_integer('num_epoch', 1000,
+tf.app.flags.DEFINE_integer('num_epoch', 10,
                             'Number of training epochs.')
 
 tf.app.flags.DEFINE_integer('batch_size', 32,
