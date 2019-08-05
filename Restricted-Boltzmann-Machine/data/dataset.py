@@ -8,7 +8,7 @@ def _get_training_data(FLAGS):
     @return data for the inference
     '''
     
-    filenames=[FLAGS.tf_records_train_path+'/'+f for f in os.listdir(FLAGS.tf_records_train_path if f != '.ipynb_checkpoints' continue)]
+    filenames=[FLAGS.tf_records_train_path+'/'+f for f in os.listdir(FLAGS.tf_records_train_path if f != '.ipynb_checkpoints')]
     
     dataset = tf.data.TFRecordDataset(filenames)
     dataset = dataset.map(parse)
@@ -30,7 +30,7 @@ def _get_training_data(FLAGS):
 def _get_test_data(FLAGS):
     ''' Buildind the input pipeline for test data.'''
     
-    filenames=[FLAGS.tf_records_test_path+'/'+f for f in os.listdir(FLAGS.tf_records_test_path if f != '.ipynb_checkpoints' continue)]
+    filenames=[FLAGS.tf_records_test_path+'/'+f for f in os.listdir(FLAGS.tf_records_test_path if f != '.ipynb_checkpoints')]
     
     dataset = tf.data.TFRecordDataset(filenames)
     dataset = dataset.map(parse)
