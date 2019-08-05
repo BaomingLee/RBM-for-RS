@@ -30,7 +30,7 @@ def _get_training_data(FLAGS):
 def _get_test_data(FLAGS):
     ''' Buildind the input pipeline for test data.'''
     
-    filenames=[FLAGS.tf_records_test_path+f for f in os.listdir(FLAGS.tf_records_test_path)]
+    filenames=[FLAGS.tf_records_test_path+'/'+f for f in os.listdir(FLAGS.tf_records_test_path)]
     
     dataset = tf.data.TFRecordDataset(filenames)
     dataset = dataset.map(parse)
